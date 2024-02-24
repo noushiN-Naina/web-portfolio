@@ -1,17 +1,13 @@
-/**
-* Template Name: DevFolio
-* Updated: Jan 29 2024 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
+* {
+  transition: .5s;
+}
+
 body {
-  background-color: #f5f5f5;
-  color: #4e4e4e;
+  background-color: #121212;
+  color: #fff9f9;
 }
 
 h1,
@@ -33,6 +29,163 @@ a:hover {
   color: #0078ff;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
+}
+
+/* skills */
+.align-middle {
+  position: relative;
+  top: 35%;
+  transform: translateY(-50%);
+}
+
+.column {
+  margin-top: 3rem;
+  padding-left: 2rem;
+}
+
+.column:hover {
+  padding-left: 0;
+}
+
+.column:hover .card .txt {
+  margin-left: 1rem;
+}
+
+.column:hover a {
+  color: rgba(255, 255, 255, 1);
+}
+
+.gr-1 {
+  width: 90%;
+  position: relative;
+  padding: 20px;
+  background: transparent;
+}
+
+.gr-1::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 255, 17, 0.831);
+}
+
+.gr-2 {
+  width: 90%;
+  position: relative;
+  padding: 20px;
+  background: transparent;
+}
+
+.gr-2::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  border-radius: 10px;
+  box-shadow: 0 0 10px  rgb(230, 255, 1);
+}
+
+.gr-3 {
+  width: 90%;
+  position: relative;
+  padding: 20px;
+  background: transparent;
+}
+
+.gr-3::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 0, 195, 0.831);
+}
+
+/* skill end */
+.card {
+  min-height: 170px;
+  margin: 0;
+  padding: 1.7rem 1.2rem;
+  border: none;
+  border-radius: 0;
+  color: rgba(0, 0, 0, 1);
+  letter-spacing: .05rem;
+  font-weight: bold;
+  box-shadow: 0 0 21px linear-gradient(170deg, #C86DD7 0%, #1D3EDE 100%, #B4EC51 100%);
+  border-radius: 8px;
+}
+
+.card .txt {
+  margin-left: -3rem;
+  z-index: 1;
+}
+
+.card .txt h1 {
+  font-weight: 400;
+  text-transform: uppercase;
+  color: white;
+}
+
+.card .txt p {
+  font-size: .7rem;
+  letter-spacing: 0rem;
+  margin-top: 33px;
+  opacity: 0;
+  color: rgba(255, 255, 255, 1);
+}
+
+.card a {
+  z-index: 3;
+  font-size: .7rem;
+  color: rgba(0, 0, 0, 1);
+  margin-left: 1rem;
+  position: relative;
+  bottom: -.5rem;
+  text-transform: uppercase;
+}
+
+.card a:after {
+  content: "";
+  display: inline-block;
+  height: 0.5em;
+  width: 0;
+  margin-right: -100%;
+  margin-left: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 1);
+  transition: .5s;
+}
+
+.card .ico-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.card i {
+  position: relative;
+  right: -50%;
+  top: 60%;
+  font-size: 12rem;
+  line-height: 0;
+  opacity: .2;
+  color: rgba(255, 255, 255, 1);
+  z-index: 0;
 }
 
 .p-r {
@@ -58,7 +211,7 @@ a:hover {
 .work-box,
 .service-box,
 .paralax-mf {
-  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 13px 8px -10px rgba(242, 240, 240, 0.1);
 }
 
 .box-shadow-a,
@@ -90,28 +243,29 @@ a:hover {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
- 
+
   /* Adjust as needed */
 }
+
 .video-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .bg-video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    transform: translate(-50%, -50%);
-    z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: -1;
 }
 
 @media (max-width: 1024px) {
@@ -172,7 +326,7 @@ a:hover {
 
 /*--/ Title A /--*/
 .title-box {
-  margin-bottom: 4rem;
+  margin-bottom: 0rem;
 }
 
 .title-a {
@@ -180,11 +334,17 @@ a:hover {
   font-size: 3rem;
   font-weight: bold;
   text-transform: uppercase;
+  color: white;
 }
 
 .subtitle-a {
-  text-decoration: none;
-  color: #4e4e4e;
+  font-size: 1.5rem;
+  background-size: 200% 200%;
+  background-image: linear-gradient(90deg, #15CBF4 0%, #42E915 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: gradientBG 5s ease infinite;
+  color: transparent;
 }
 
 .line-mf {
@@ -846,7 +1006,7 @@ a:hover {
 # About
 --------------------------------------------------------------*/
 .about-mf .box-shadow-full {
-  padding-top: 4rem;
+  padding-top: 2rem;
   padding-bottom: 4rem;
 }
 
