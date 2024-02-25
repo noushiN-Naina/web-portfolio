@@ -51,10 +51,6 @@ a:hover {
   margin-left: 1rem;
 }
 
-.column:hover a {
-  color: rgba(255, 255, 255, 1);
-}
-
 .gr-1 {
   width: 90%;
   position: relative;
@@ -72,6 +68,7 @@ a:hover {
   z-index: -1;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 255, 17, 0.831);
+  height: 100%;
 }
 
 .gr-2 {
@@ -90,7 +87,7 @@ a:hover {
   bottom: -5px;
   z-index: -1;
   border-radius: 10px;
-  box-shadow: 0 0 10px  rgb(230, 255, 1);
+  box-shadow: 0 0 10px rgb(230, 255, 1);
 }
 
 .gr-3 {
@@ -112,9 +109,35 @@ a:hover {
   box-shadow: 0 0 10px rgba(255, 0, 195, 0.831);
 }
 
+.icons {
+  border: 2px solid rgb(147, 144, 144);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: fit-content;
+}
+
+.icons img {
+  width: 25px;
+  height: auto;
+  margin-right: 10px;
+  margin: 10px;
+}
+
+.text {
+  display: inline-block;
+  vertical-align: middle;
+  color: white;
+  justify-content: center;
+  text-align: center;
+  margin-right: 10px;
+}
+
+
 /* skill end */
 .card {
-  min-height: 170px;
+  min-height: 250px;
   margin: 0;
   padding: 1.7rem 1.2rem;
   border: none;
@@ -129,6 +152,7 @@ a:hover {
 .card .txt {
   margin-left: -3rem;
   z-index: 1;
+  color: white;
 }
 
 .card .txt h1 {
