@@ -1,0 +1,7 @@
+@media (max-width: 1420px) and (min-width: 993px) {
+    /* Add your custom CSS styles here */
+    .column {
+        /* Example of adjusting the width for the icons container */
+        width: 50%;
+    }
+}
