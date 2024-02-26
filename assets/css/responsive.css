@@ -1,7 +1,35 @@
-@media (max-width: 1420px) and (min-width: 993px) {
-    /* Add your custom CSS styles here */
+@media (min-width: 320px) and (max-width: 480px) {
     .column {
         /* Example of adjusting the width for the icons container */
-        width: 50%;
+        width: 100%;
+    }
+
+    .card .txt {
+        margin-left: 0px;
+    }
+
+    .icons {
+        margin-left: -13px;
+        /* border: 2px solid rgb(147, 144, 144); */
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        width: fit-content;
+    }
+
+    .icons img {
+        width: 0px;
+        height: auto;
+        margin-right: 10px;
+        margin: 5px;
     }
 }
+
+@media (min-width: 481px) and (max-width: 768px) {}
+
+@media (min-width: 769px) and (max-width: 1024px) {}
+
+@media (min-width: 1025px) and (max-width: 1200px) {}
+
+@media (min-width: 1201px) {}

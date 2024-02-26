@@ -1233,7 +1233,7 @@ h5 {
 }
 
 .hero .overlay-itro {
-  background-color: rgba(8, 8, 8, 0.905);
+  background-color: rgba(8, 8, 8, 0.78);
   position: absolute;
   top: 0;
   left: 0px;
@@ -1309,6 +1309,7 @@ h5 {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+
 .about-mf .box-shadow-full {
   padding-top: 2rem;
   padding-bottom: 4rem;
