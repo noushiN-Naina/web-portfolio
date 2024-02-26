@@ -4,6 +4,10 @@
         width: 100%;
     }
 
+    .column:hover .card .txt {
+        margin-left: 0rem;
+    }
+
     .card .txt {
         margin-left: 0px;
     }
@@ -29,7 +33,7 @@
 @media (min-width: 481px) and (max-width: 768px) {}
 
 @media (min-width: 769px) and (max-width: 1024px) {
-    
+
     .icons {
         padding: 0px;
         font-size: 12px;
