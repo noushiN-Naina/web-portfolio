@@ -101,8 +101,8 @@ a:hover {
 }
 
 .icons {
-  border: 2px solid rgb(147, 144, 144);
-  border-radius: 15px;
+  /* border: 2px solid rgb(147, 144, 144);
+  border-radius: 15px; */
   display: flex;
   align-items: center;
   overflow: hidden;
