@@ -579,7 +579,7 @@ h5 {
 }
 
 .overlay-mf {
-  background-color: #0078ff;
+  background-color: #040404f2;
 }
 
 .overlay-mf {
@@ -1388,7 +1388,7 @@ h5 {
 }
 
 .service-box .s-description {
-  color: #4e4e4e;
+  color: #ffffff;
 }
 
 /*--------------------------------------------------------------
@@ -1446,6 +1446,7 @@ h5 {
 
 .work-content {
   padding: 2rem 3% 1rem 4%;
+  background-color: #000000eb;
 }
 
 .work-content .w-more {
@@ -1931,7 +1932,7 @@ footer {
   text-align: center;
   color: #fff;
   padding: 25px 0;
-  background: #0062d3;
+  background: #131313;
 }
 
 footer .copyright {
