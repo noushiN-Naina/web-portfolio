@@ -579,7 +579,7 @@ h5 {
 }
 
 .overlay-mf {
-  background-color: #040404f2;
+  background-color: #040404f2 !important;
 }
 
 .overlay-mf {
